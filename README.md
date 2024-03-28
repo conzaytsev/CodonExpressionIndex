@@ -34,3 +34,10 @@ To use the Codon Productivity model:
         
 In order to use the default dataset for E. Coli ATCC 25922 leave the brackets empty.
 
+Codon scores for each of the models as a dict:
+
+        model.scores
+        
+Predict number of protein copies per cell based on the nucleotide sequence:
+
+        model.predict('ATG...')
