@@ -9,6 +9,7 @@ This model requires protein expression data for specific organism.
 Dataset should be presented as a .csv file containing three columns: protein ID, number of protein copies per cell, gene sequence.
 First line of the table is reserved for the header.
 
+
 Example:
 
     Protein ID;Protein copies;Gene sequence
@@ -16,4 +17,15 @@ Example:
     P0AG51;4376.7908013480401;ATGGCAAAGACTATTAAAATTACTCAAACCCGCAGTGCAATCGGTCGTCTGCCGAAACACAAGGCAACGCTGCTTGGCCTGGGTCTGCGTCGTATTGGTCACACCGTAGAGCGCGAGGATACTCCTGCTATTCGCGGTATGATCAACGCGGTTTCCTTCATGGTTAAAGTTGAGGAGTAA
     P0A7Q6;3802.6818971891998;ATGAAAGTTCGTGCTTCCGTCAAGAAATTATGCCGTAACTGCAAAATCGTTAAGCGTGATGGTGTCATCCGTGTGATTTGCAGTGCCGAGCCGAAGCATAAACAGCGCCAAGGCTGA
 
-A dataset provided for the E. Coli ATCC 25922 is based on the experimental data by Jacek R. Wiśniewski and Dariusz Rakus (Quantitative analysis of the Escherichia coli proteome, https://doi.org/10.1016/j.dib.2014.08.004).
+The provided dataset for E. Coli ATCC 25922 is based on the experimental data by Jacek R. Wiśniewski and Dariusz Rakus (Quantitative analysis of the Escherichia coli proteome, https://doi.org/10.1016/j.dib.2014.08.004).
+
+## Quickstart
+Importing the module:
+    import CodonExpressionIndex
+
+To use the Codon Expression Index model:
+    model = ExpressionIndex(path_to_dataset)
+To use the Codon Productivity model:
+    model = CodonProductivity(path_to_dataset)
+In order to use the default dataset for E. Coli ATCC 25922 leave the brackets empty.
+
