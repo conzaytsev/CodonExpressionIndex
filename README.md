@@ -21,11 +21,16 @@ The provided dataset for E. Coli ATCC 25922 is based on the experimental data by
 
 ## Quickstart
 Importing the module:
+
         import CodonExpressionIndex
 
 To use the Codon Expression Index model:
+
         model = ExpressionIndex(path_to_dataset)
+        
 To use the Codon Productivity model:
+
         model = CodonProductivity(path_to_dataset)
+        
 In order to use the default dataset for E. Coli ATCC 25922 leave the brackets empty.
 
