@@ -22,7 +22,7 @@ The provided dataset for E. Coli ATCC 25922 is based on the experimental data by
 ## Quickstart
 Importing the module:
 
-        import CodonExpressionIndex
+        import cei
 
 To use the Codon Expression Index model:
 
