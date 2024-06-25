@@ -1,17 +1,19 @@
 from setuptools import setup
 
-VERSION = '0.1.0' 
-DESCRIPTION = 'Codon Expression Index'
-LONG_DESCRIPTION = 'Python module for analysis of codon influence on protein expression.'
 
-# Setting up
 setup(
-    name="cei", 
-    version=VERSION,
+    name="CodonExpressionIndex", 
+    version='0.1.0',
     author="Konstantin Zaytsev",
-    description=DESCRIPTION,
-    long_description=LONG_DESCRIPTION,
-    packages='cei,
+    url='https://github.com/conzaytsev/CodonExpressionIndex',
+    description='Codon Expression Index',
+    long_description='Python module for analysis of codon influence on protein expression.',
+    packages=['cei],
     install_requires=['scipy'],
-    classifiers= ["Programming Language :: Python :: 3"]
+    python_requires='>3.9',
+    package_data={'cei': ['datasets/*.csv']},
+    classifiers= [
+        'License :: OSI Approved :: MIT License',
+        'Programming Language :: Python :: 3'
+    ]
 )
