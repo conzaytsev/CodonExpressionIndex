@@ -1,5 +1,7 @@
 from math import log, sqrt, isnan
 from scipy.stats import kendalltau, linregress
+from importlib.resources import files
+from . import datasets
 
 
 def kendallr(query, target):
@@ -11,8 +13,11 @@ def kendallr(query, target):
 
 
 class ExpressionIndex:
-    def __init__(self, data_filename='ATCC_25922.csv'):
-        with open(data_filename, 'r') as file:
+    def __init__(self, path_to_dataset=''):
+        if path_to_dataset == '':
+            path_to_dataset = files(datasets) / 'ATCC_25922.csv'
+
+        with open(path_to_dataset, 'r') as file:
             data = file.readlines()
 
         genes = []
@@ -94,8 +99,11 @@ class ExpressionIndex:
 
 
 class CodonProductivity:
-    def __init__(self, data_filename='ATCC_25922.csv'):
-        with open(data_filename, 'r') as file:
+    def __init__(self, path_to_dataset=''):
+        if path_to_dataset == '':
+            path_to_dataset = files(datasets) / 'ATCC_25922.csv'
+
+        with open(path_to_dataset, 'r') as file:
             data = file.readlines()
 
         genes = []
@@ -180,4 +188,3 @@ class CodonProductivity:
 
         gene_score /= (len(test_sequence) / 3 - 1)
         return self.slope * gene_score + self.intercept
-
