@@ -72,8 +72,8 @@ class ExpressionIndex:
             for triplet in triplets:
                 distribution[triplet][i] /= gene_sum
 
-        scores = {triplet: 3 * kendallr(distribution[triplet], quantities) * sqrt(len(genes) * (len(genes) - 1)) / sqrt(
-            2 * (2 * len(genes) + 5)) for triplet in triplets}
+        scores = {triplet: float(3 * kendallr(distribution[triplet], quantities) * sqrt(len(genes) * (len(genes) - 1)) / sqrt(
+            2 * (2 * len(genes) + 5))) for triplet in triplets}
         self.scores = scores
 
         train_scores = []
