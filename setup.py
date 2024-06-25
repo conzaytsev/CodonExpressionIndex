@@ -8,7 +8,7 @@ setup(
     url='https://github.com/conzaytsev/CodonExpressionIndex',
     description='Codon Expression Index',
     long_description='Python module for analysis of codon influence on protein expression.',
-    packages=['cei],
+    packages=['cei'],
     install_requires=['scipy'],
     python_requires='>3.9',
     package_data={'cei': ['datasets/*.csv']},
