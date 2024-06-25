@@ -1,1 +1,1 @@
-from expression_index import ExpressionIndex, CodonProductivity
+from .expression_index import ExpressionIndex, CodonProductivity
