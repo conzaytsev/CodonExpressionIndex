@@ -12,7 +12,7 @@ def kendallr(query, target):
         return result
 
 
-class ExpressionIndex:
+class CodonExpressionIndex:
     def __init__(self, path_to_dataset=''):
         if path_to_dataset == '':
             path_to_dataset = files(datasets) / 'ATCC_25922.csv'
