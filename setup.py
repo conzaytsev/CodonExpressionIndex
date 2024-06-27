@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name="cei", 
-    version='0.1.0',
+    version='0.1.1',
     author="Konstantin Zaytsev",
     url='https://github.com/conzaytsev/CodonExpressionIndex',
     description='Codon Expression Index',
