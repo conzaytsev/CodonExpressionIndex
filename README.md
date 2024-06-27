@@ -20,6 +20,12 @@ Example:
 The provided dataset for E. Coli ATCC 25922 is based on the experimental data by Jacek R. Wiśniewski and Dariusz Rakus (Quantitative analysis of the Escherichia coli proteome, https://doi.org/10.1016/j.dib.2014.08.004).
 
 ## Installation
+From PyPI:
+
+    pip install cei
+    
+For the latest development version:
+    
     pip install git+https://github.com/conzaytsev/CodonExpressionIndex.git
 
 ## Quickstart
