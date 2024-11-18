@@ -35,16 +35,16 @@ Importing the module:
 
 To use the Codon Expression Index model:
 
-    model = CodonExpressionIndex(path_to_dataset)
+    model = cei.CodonExpressionIndex(path_to_dataset)
         
 To use the Codon Productivity model:
 
-    model = CodonProductivity(path_to_dataset)
+    model = cei.CodonProductivity(path_to_dataset)
         
 In order to use the default dataset for E. Coli ATCC 25922 leave the brackets empty.
         
-    model = CodonExpressionIndex()
-    model = CodonProductivity()
+    model = cei.CodonExpressionIndex()
+    model = cei.CodonProductivity()
 
 Codon scores for each of the models as a dict:
 
