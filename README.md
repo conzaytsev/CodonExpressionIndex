@@ -5,7 +5,7 @@ Python module for analysis of codon influence on protein expression.
 `Python >3.9`, `scipy`
 
 ## Citation
-Zaytsev K, Bogatyreva N, Fedorov A. Link Between Individual Codon Frequencies and Protein Expression: Going Beyond Codon Adaptation Index. Int J Mol Sci. 2024 Oct 29;25(21):11622. https://doi.org/10.3390/ijms252111622 PMID: 39519173; PMCID: PMC11546221.
+Zaytsev K, Bogatyreva N, Fedorov A. Link Between Individual Codon Frequencies and Protein Expression: Going Beyond Codon Adaptation Index. Int J Mol Sci. 2024 Oct 29;25(21):11622. https://doi.org/10.3390/ijms252111622
 
 ## Dataset
 This model requires protein expression data for a specific organism.
