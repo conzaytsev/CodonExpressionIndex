@@ -27,7 +27,7 @@ From PyPI:
 
     pip install cei
     
-For the latest development version:
+For the latest development version: 
     
     pip install git+https://github.com/conzaytsev/CodonExpressionIndex.git
 
