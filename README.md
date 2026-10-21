@@ -1,5 +1,5 @@
 # Codon Expression Index
-Python module for analysis of codon influence on protein expression. 
+Python module for analysis of codon influence on protein expression.
 
 ## Requirements
 `Python >3.9`, `scipy`
