@@ -46,7 +46,9 @@ To use the Codon Productivity model:
         
 To use the Codon Adaptation Index model:
 
-    model = cei.CodonAdaptationIndex(path_to_dataset)
+    model = cei.CodonAdaptationIndex(path_to_dataset, fraction=0.125)
+
+Fraction parameter is used to select a fraction of genes from the dataset with the highest expression values for determining the preferred codons.
         
 In order to use the default dataset for E. Coli ATCC 25922 leave the brackets empty.
         
