@@ -44,10 +44,15 @@ To use the Codon Productivity model:
 
     model = cei.CodonProductivity(path_to_dataset)
         
+To use the Codon Adaptation Index model:
+
+    model = cei.CodonAdaptationIndex(path_to_dataset)
+        
 In order to use the default dataset for E. Coli ATCC 25922 leave the brackets empty.
         
     model = cei.CodonExpressionIndex()
     model = cei.CodonProductivity()
+    model = cei.CodonAdaptationIndex()
 
 Codon scores for each of the models as a dict:
 
