@@ -13,7 +13,10 @@ def kendallr(query, target):
 
 
 class CodonAdaptationIndex:
-    def __init__(self, path_to_dataset='ATCC_25922.csv', fraction = 0.125):
+    def __init__(self, path_to_dataset='', fraction = 0.125):
+        if path_to_dataset == '':
+            path_to_dataset = files(datasets) / 'ATCC_25922.csv'
+
         with open(path_to_dataset, 'r') as file:
             data = file.readlines()
 
@@ -97,7 +100,10 @@ class CodonAdaptationIndex:
 
 
 class CodonExpressionIndex:
-    def __init__(self, path_to_dataset='ATCC_25922.csv'):
+    def __init__(self, path_to_dataset=''):
+        if path_to_dataset == '':
+            path_to_dataset = files(datasets) / 'ATCC_25922.csv'
+
         with open(path_to_dataset, 'r') as file:
             data = file.readlines()
 
@@ -186,7 +192,10 @@ class CodonExpressionIndex:
 
 
 class CodonProductivity:
-    def __init__(self, path_to_dataset='ATCC_25922.csv'):
+    def __init__(self, path_to_dataset=''):
+        if path_to_dataset == '':
+            path_to_dataset = files(datasets) / 'ATCC_25922.csv'
+
         with open(path_to_dataset, 'r') as file:
             data = file.readlines()
 
